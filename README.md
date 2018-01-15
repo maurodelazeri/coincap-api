@@ -1,13 +1,4 @@
-# Coinmarketcap API implementation
+# CoinCap API implementation
 
-Uses:
-
-cd examples
-<br>
-go run examples.go
-
-Docs: http://coinmarketcap.com/api
-
+Docs: git remote add origin https://github.com/CoinCapDev/CoinCap.io
 TODO:
-  
-  * Unit tests
