@@ -8,17 +8,18 @@ import (
 type Ticks []*Tick
 
 type Tick struct {
-	Short       string  `json:"short"`
-	Long        float64 `json:"long"`
-	Mktcap      float64 `json:"mktcap"`
-	Perc        float64 `json:"perc"`
-	Price       float64 `json:"price"`
-	ShapeShift  float64 `json:"shapeshift"`
-	Supply      int64   `json:"supply"`
-	UsdVolume   float64 `json:"usdVolume"`
-	Volume      float64 `json:"volume"`
-	VwapData    float64 `json:"vwapData"`
-	VwapDataBTC float64 `json:"vwapDataBTC"`
+	Short         string  `json:"short"`
+	Cap24hrChange float64 `json:"cap24hrChange"`
+	Long          string  `json:"long"`
+	Mktcap        float64 `json:"mktcap"`
+	Perc          float64 `json:"perc"`
+	Price         float64 `json:"price"`
+	ShapeShift    bool    `json:"shapeshift"`
+	Supply        int64   `json:"supply"`
+	UsdVolume     float64 `json:"usdVolume"`
+	Volume        float64 `json:"volume"`
+	VwapData      float64 `json:"vwapData"`
+	VwapDataBTC   float64 `json:"vwapDataBTC"`
 }
 
 // coincap API implementation of Ticker endpoint.
